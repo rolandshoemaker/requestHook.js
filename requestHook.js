@@ -7,9 +7,9 @@ ajaxClone = $.ajax
 $.ajax = function (e, n) {
 	var parser = document.createElement('a');
 	if (typeof(e) == "object") {
-		var copy = JSON.parse(JSON.stringify(e))
+		var copy = JSON.parse(JSON.stringify(e));
 		parser.href = e.url;
-		copy.url = 'http://'+clone_addr+parser.pathname+parser.search+parser.hash
+		copy.url = 'http://'+clone_addr+parser.pathname+parser.search+parser.hash;
 		ajaxClone(copy, n);
 	} else {
 		parser.href = e;
