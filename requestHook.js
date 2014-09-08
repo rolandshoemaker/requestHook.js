@@ -11,6 +11,9 @@ $.ajax = function (e, n) {
 		parser.href = e.url;
 		copy.url = 'http://'+clone_addr+parser.pathname+parser.search+parser.hash
 		ajaxClone(copy, n);
+	} else {
+		parser.href = e;
+		ajaxClone('http://'+clone_addr+parser.pathname+parser.search+parser.hash, n);
 	}
 	return ajaxClone(e, n);
 }
