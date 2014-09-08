@@ -1,7 +1,7 @@
 requestHook.js
 ==============
 
-a very simple javascript file that will hook jquery's $.ajax() function allowing all calls to $.ajax(), $.get(), and $.post() to be cloned to another address.
+a very simple javascript file that will hook jquery's $.ajax() function allowing all calls to $.ajax(), $.get(), and $.post() to be cloned to another address (Note: this is also essentially example code for how to hook a JS function...)
 
 This was originally written to be used with [postMonitor](https://github.com/rolandshoemaker/postMonitor).
 
