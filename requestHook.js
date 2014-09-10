@@ -1,7 +1,7 @@
 // requestHook.js - roland shoemaker 2014
 // hooks $.ajax and by inheritence $.get and $.post, i guess this could be a little evil...
 
-clone_addr = "192.168.1.130:8080";
+clone_addr = "127.0.0.1:8080";
 
 ajaxClone = $.ajax
 $.ajax = function (e, n) {
